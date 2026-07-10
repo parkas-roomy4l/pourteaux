@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pourteaux.xyz</title>
+<style>
+  body {
+    background: #ffffff;
+    color: #000000;
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details {
+    margin: 0;
+  }
+
+  .branch {
+    font-family: "Courier New", Consolas, monospace;
+    white-space: pre;
+  }
+
+  .leaf {
+    margin: 0.15rem 0;
+  }
+
+  .toggle {
+    font-family: "Courier New", Consolas, monospace;
+  }
+
+  .toggle::before {
+    content: "[+] ";
+  }
+
+  details[open] > summary .toggle::before {
+    content: "[-] ";
+  }
+
+  code {
+    font-family: "Courier New", Consolas, monospace;
+  }
+
+  .about-text {
+    font-style: italic;
+    color: #444444;
+  }
+</style>
+</head>
+<body>
+
+<details open id="root">
+  <summary><span class="toggle"></span><strong>pourteaux.xyz</strong></summary>
+  <div class="tree-content">
+
+    <div class="leaf">
+      <span class="branch">├── </span><a href="https://read.pourteaux.xyz" target="_blank" rel="noopener noreferrer">newsletter</a>
+    </div>
+
+    <details>
+      <summary><span class="branch">├── </span><span class="toggle"></span>socials</summary>
+      <div class="tree-content">
+        <div class="leaf">
+          <span class="branch">│   ├── </span><a href="https://x.com/pourteaux" target="_blank" rel="noopener noreferrer">X</a>
+        </div>
+        <div class="leaf">
+          <span class="branch">│   └── </span><a href="https://instagram.com/hardtodenni" target="_blank" rel="noopener noreferrer">instagram</a>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="branch">├── </span><span class="toggle"></span>projects</summary>
+      <div class="tree-content">
+        <div class="leaf">
+          <span class="branch">│   ├── </span><a href="https://syllabusgen.net" target="_blank" rel="noopener noreferrer">syllabusgen.net</a>
+        </div>
+        <div class="leaf">
+          <span class="branch">│   ├── </span><a href="https://chinesereader.net" target="_blank" rel="noopener noreferrer">chinesereader.net</a>
+        </div>
+        <div class="leaf">
+          <span class="branch">│   ├── </span><a href="https://nodi.nyc" target="_blank" rel="noopener noreferrer">nodi.nyc</a>
+        </div>
+        <div class="leaf">
+          <span class="branch">│   └── </span><a href="https://pourteaux.art" target="_blank" rel="noopener noreferrer">pourteaux.art</a>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="branch">├── </span><span class="toggle"></span>contribute</summary>
+      <div class="tree-content">
+        <div class="leaf">
+          <span class="branch">│   └── </span>BTC: <code>3JFjU8MsoQKAFWB8RkCJEwhsG34AzEWmDC</code>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="branch">└── </span><span class="toggle"></span>about</summary>
+      <div class="tree-content">
+        <div class="leaf">
+          <span class="branch">    └── </span><span class="about-text">nice to meet you. i am a resident of nyc and an avid tinkerer on the internet. i like to think about the future and far away places, while also making connections in my own microneighborhood. the best way to contact me is to subscribe to my substack as i always try to read subscriber messages. i hope we meet someday!</span>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</details>
+
+</body>
+</html>
